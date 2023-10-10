@@ -15,20 +15,25 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to={"/category/funko"} >Funko</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to={"/category/figuras"}>Figuras</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to={"/category/cards"}>Cards</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="justify-content-end  align-items-center" to={"/cart"}><CartWidget /></Link>
-                        </li>
-                    </ul>
+                    <div className="navbar-nav">
+                        <ul className='list-first'>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" aria-current="page" to={"/category/funko"} >Funkos</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to={"/category/figuras"}>Figuras</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to={"/category/cards"}>Cards</NavLink>
+                            </li>
+                        </ul>
+                        <ul className='list-second'>
+                            <li className="nav-item">
+                                <Link className="justify-content-end  align-items-center" to={"/cart"}><CartWidget /></Link>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
