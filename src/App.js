@@ -3,11 +3,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from './Context/CartContext';
 import Navbar from './components/Navbar/Navbar';
 import Carrousel from './components/Carrousel/Carrousel';
-import ItemListContainer from "../src/componets/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "../src/componets/ItemDetailContainer/ItemDetailContainer";
-import Cart from "./componets/Cart/Cart";
+import ItemListContainer from "../src/components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "../src/components/ItemDetailContainer/ItemDetailContainer";
+import Checkout from "../src/components/Checkout/Checkout";
+import Cart from "../src/components/Cart/Cart";
 import Error404 from "../src/components/Error404/Error404"
-import Checkout from "../src/components/Checkout/Checkout"
+
 
 function App() {
   return (
