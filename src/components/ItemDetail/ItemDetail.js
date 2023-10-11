@@ -39,7 +39,7 @@ const ItemDetail = ({item}) => {
                     Stock Disponible: {item.stock} und
                 </p>
                 <div className='Botones'>
-                {goToCart ? <Link to='/cart'>Terminar compra</Link> :<ItemCount stock={item.stock} initial={0} onAdd={onAdd} />}
+                {goToCart ? <Link to='/cart'>Terminar compra</Link> :<ItemCount stock={10} initial={0} onAdd={onAdd} />}
                 </div>
             </section>
         </div>

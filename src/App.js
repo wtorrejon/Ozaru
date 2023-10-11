@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Carrousel from './components/Carrousel/Carrousel';
 import ItemListContainer from "../src/components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "../src/components/ItemDetailContainer/ItemDetailContainer";
-import Checkout from "../src/components/Checkout/Checkout";
+import {Checkout} from "../src/components/Checkout/Checkout";
 import Cart from "../src/components/Cart/Cart";
 import Error404 from "../src/components/Error404/Error404"
 

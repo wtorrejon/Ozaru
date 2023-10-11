@@ -1,0 +1,15 @@
+.card {
+    margin: 10px;
+}
+
+.card-title {
+    height: 72px;
+    font-size: 18px;
+}
+
+.card-text p {
+    margin: 0;
+}
+.Option{
+    color: white !important;
+}
