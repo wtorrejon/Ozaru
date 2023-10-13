@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Ozaru/static/css/main.91c9ab45.css",
+    "main.js": "/Ozaru/static/js/main.15cd9fef.js",
+    "static/js/787.1ba164d6.chunk.js": "/Ozaru/static/js/787.1ba164d6.chunk.js",
+    "static/media/Ozaru-with-text.png": "/Ozaru/static/media/Ozaru-with-text.f0c6f6a96ba95e96749d.png",
+    "index.html": "/Ozaru/index.html",
+    "main.91c9ab45.css.map": "/Ozaru/static/css/main.91c9ab45.css.map",
+    "main.15cd9fef.js.map": "/Ozaru/static/js/main.15cd9fef.js.map",
+    "787.1ba164d6.chunk.js.map": "/Ozaru/static/js/787.1ba164d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91c9ab45.css",
+    "static/js/main.15cd9fef.js"
+  ]
+}
