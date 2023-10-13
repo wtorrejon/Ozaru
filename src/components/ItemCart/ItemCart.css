@@ -26,3 +26,37 @@
     width: 300px;
     border-bottom: 1px solid gray;
 }
+.quantityProductList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-bottom: 1px solid gray;
+}
+.priceProductList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    border-bottom: 1px solid gray;
+}
+.multProductList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    border-bottom: 1px solid gray;
+}
+.btnRemove{
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    border-bottom: 1px solid gray;
+}
