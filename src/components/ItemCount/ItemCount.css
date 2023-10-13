@@ -1,0 +1,29 @@
+.btnControl{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(32, 46, 92);
+    background-color: rgb(32, 46, 92);
+    color: white;
+}
+.spaceCount{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-btnControl{
+    width: 140px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.btnAddToCart{
+    border-radius: 5px;
+    border: 1px solid rgb(32, 46, 92);
+    background-color: rgb(32, 46, 92);
+    color: white; 
+}

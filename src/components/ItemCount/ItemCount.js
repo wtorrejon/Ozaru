@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
+import './ItemCount.css'
 
 const ItemCount = ({ stock, initial, onAdd }) => {
 
@@ -20,16 +21,19 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
     return (
         <div className='counter-strike'>
-            <div>
-                <button className='btnControl' disabled={count <= 1} onClick={decrease}>
-                    -
-                </button>
-                <span>{count}</span>
-                <button className='btnControl' disabled={count >= stock} onClick={increase}>
-                    +
-                </button>
+            <div className='counter'>
+                <div className='wrapper-btnControl'>
+                    <button className='btnControl' disabled={count <= 0} onClick={decrease}>
+                        -
+                    </button>
+                    <div className='spaceCount'>{count}</div>
+                    <button className='btnControl' disabled={count >= stock} onClick={increase}>
+                        +
+                    </button>
+                </div>
+
                 <div>
-                    <button  disabled={stock <= 0} onClick={() => onAdd(count)}>
+                    <button className='btnAddToCart' disabled={stock <= 0} onClick={() => onAdd(count)}>
                         Agregar al carrito
                     </button>
                 </div>
