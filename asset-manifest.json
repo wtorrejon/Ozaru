@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Ozaru/static/css/main.91c9ab45.css",
-    "main.js": "/Ozaru/static/js/main.075551b5.js",
-    "static/js/787.1ba164d6.chunk.js": "/Ozaru/static/js/787.1ba164d6.chunk.js",
-    "static/media/Ozaru-with-text.png": "/Ozaru/static/media/Ozaru-with-text.f0c6f6a96ba95e96749d.png",
-    "index.html": "/Ozaru/index.html",
-    "main.91c9ab45.css.map": "/Ozaru/static/css/main.91c9ab45.css.map",
-    "main.075551b5.js.map": "/Ozaru/static/js/main.075551b5.js.map",
-    "787.1ba164d6.chunk.js.map": "/Ozaru/static/js/787.1ba164d6.chunk.js.map"
+    "main.css": "/Ozaru.github.io/static/css/main.91c9ab45.css",
+    "main.js": "/Ozaru.github.io/static/js/main.bac529c3.js",
+    "static/js/787.1ba164d6.chunk.js": "/Ozaru.github.io/static/js/787.1ba164d6.chunk.js",
+    "static/media/Ozaru-with-text.png": "/Ozaru.github.io/static/media/Ozaru-with-text.f0c6f6a96ba95e96749d.png",
+    "index.html": "/Ozaru.github.io/index.html",
+    "main.91c9ab45.css.map": "/Ozaru.github.io/static/css/main.91c9ab45.css.map",
+    "main.bac529c3.js.map": "/Ozaru.github.io/static/js/main.bac529c3.js.map",
+    "787.1ba164d6.chunk.js.map": "/Ozaru.github.io/static/js/787.1ba164d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.91c9ab45.css",
-    "static/js/main.075551b5.js"
+    "static/js/main.bac529c3.js"
   ]
 }
