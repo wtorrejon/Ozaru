@@ -1,3 +1,6 @@
+.counter{
+    background-color: white;
+}
 .btnControlAdd{
     width: 30px;
     height: 30px;
@@ -26,6 +29,7 @@
 }
 .spaceCount{
     border: 1px solid rgb(53, 0, 70);
+    color: black;
     width: 100px;
     height: 30px;
     display: flex;
