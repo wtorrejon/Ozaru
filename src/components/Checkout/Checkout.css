@@ -1,0 +1,39 @@
+.formularioCheckout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-form{
+    width: 700px;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.form-group{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.input-check{
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.checking{
+    margin-top: 20px;
+}
+.check-bt{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(170, 12, 104);
+    background-color: rgb(170, 12, 104);
+    color: white; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}

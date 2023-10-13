@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useCartContext } from '../../Context/CartContext';
+import './Checkout.css'
 
 import {
   getFirestore,
@@ -93,7 +94,7 @@ export const Checkout = () => {
         Rellena el formulario y nos contactaremos para enviar sus productos
       </h2>
 
-      <form onSubmit={manejadorFormulario}>
+      <form className='formularioCheckout' onSubmit={manejadorFormulario}>
         {cart.map((producto) => (
           <div className="item-check" key={producto.id}>
             <p>
@@ -101,59 +102,67 @@ export const Checkout = () => {
               {producto.nombre}  {producto.cantidad}
             </p>
             <p>  {producto.precio} </p>
-            
+
           </div>
         ))}
+        {/* Formulario */}
+        <div className='wrapper-form'>
+          <div className="form-group">
+            <label className="lab-check">Nombre</label>
+            <input
+              className="input-check"
+              type="text"
+              value={nombre}
+              onChange={(e) => setNombre(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Nombre</label>
-          <input
-            className="input-check"
-            type="text"
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
-          />
+          <div className="form-group">
+            <label className="lab-check">Apellido</label>
+            <input
+              className="input-check"
+              type="text"
+              value={apellido}
+              onChange={(e) => setApellido(e.target.value)}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="lab-check">Telefono</label>
+            <input
+              className="input-check"
+              type="number"
+              value={telefono}
+              onChange={(e) => setTelefono(e.target.value)}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="lab-check">Email</label>
+            <input
+              className="input-check"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div className="form-group">
+            <label className="lab-check">Email Confirmacion</label>
+            <input
+              className="input-check"
+              type="email"
+              value={emailConfirmacion}
+              onChange={(e) => setEmailConfirmacion(e.target.value)}
+            />
+          </div>
+          <div className="checking">
+            <button className="check-bt" type="submit">
+              Finalizar Compra
+            </button>
+          </div>
         </div>
 
-        <div className="form-group">
-          <label className="lab-check">Apellido</label>
-          <input
-            className="input-check"
-            type="text"
-            value={apellido}
-            onChange={(e) => setApellido(e.target.value)}
-          />
-        </div>
-
-        <div className="form-group">
-          <label className="lab-check">Telefono</label>
-          <input
-            className="input-check"
-            type="number"
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
-          />
-        </div>
-
-        <div className="form-group">
-          <label className="lab-check">Email</label>
-          <input
-            className="input-check"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-
-        <div className="form-group">
-          <label className="lab-check">Email Confirmacion</label>
-          <input
-            className="input-check"
-            type="email"
-            value={emailConfirmacion}
-            onChange={(e) => setEmailConfirmacion(e.target.value)}
-          />
-        </div>
 
         {error && <p className="error-campos">{error}</p>}
 
@@ -164,11 +173,7 @@ export const Checkout = () => {
           </p>
         )}
 
-        <div className="checking">
-          <button className="check-bt" type="submit">
-            Finalizar Compra
-          </button>
-        </div>
+
       </form>
     </>
   );
