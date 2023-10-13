@@ -23,11 +23,11 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <div className='counter-strike'>
             <div className='counter'>
                 <div className='wrapper-btnControl'>
-                    <button className='btnControl' disabled={count <= 0} onClick={decrease}>
+                    <button className='btnControlRest' disabled={count <= 0} onClick={decrease}>
                         -
                     </button>
                     <div className='spaceCount'>{count}</div>
-                    <button className='btnControl' disabled={count >= stock} onClick={increase}>
+                    <button className='btnControlAdd' disabled={count >= stock} onClick={increase}>
                         +
                     </button>
                 </div>
