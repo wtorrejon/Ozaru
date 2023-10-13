@@ -1,0 +1,28 @@
+.tittlesProducts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========Detalle de Producto=========*/
+.wrapper-productList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-productList>div>p{
+    font-size: 14px;
+    margin: 0;
+}
+.ImgProductList{
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+.nameProductList{
+    height: 50px;
+    width: 300px;
+    border-bottom: 1px solid gray;
+}
