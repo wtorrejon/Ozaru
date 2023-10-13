@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useCartContext } from '../../Context/CartContext';
 import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
+import './ItemDetail.css'
 
 const ItemDetail = ({item}) => {
 
@@ -25,18 +26,18 @@ const ItemDetail = ({item}) => {
                     {item.name}
                 </h2>
             </div>
-            <section>
+            <section className='sectionInfo'>
                 <p className='info'>                                                                                                                                                    
-                    Descripcion: {item.description}
+                    <b>Descripcion:</b> {item.description}
                 </p>
                 <p className='info'>
-                    Categoria: {item.category}
+                    <b>Categoria:</b> {item.category}
                 </p>
                 <p className='info'>
-                    Precio: {item.price}
+                    <b>Precio:</b> {item.price}
                 </p>
                 <p className='info'>
-                    Stock Disponible: {item.stock} und
+                    <b>Stock Disponible:</b> {item.stock} und
                 </p>
                 <div className='Botones'>
                 {goToCart ? <Link to='/cart'>Terminar compra</Link> :<ItemCount stock={10} initial={0} onAdd={onAdd} />}

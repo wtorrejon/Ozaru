@@ -1,9 +1,10 @@
-.ListGroup{
-    width: 90%;
-    margin: 0 auto;
-  
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    gap: 20px;
-  
-  }
+.cardWrapper {
+ width: 18rem;
+}
+
+.groupCards{
+  margin-top: 24px;
+  display: grid;
+  grid-auto-rows: 34rem;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)) ;
+}

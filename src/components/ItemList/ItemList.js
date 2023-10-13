@@ -7,11 +7,11 @@ const ItemList = ({ item }) => {
     console.log('products',item)
 
     return (
-        <div className='row' id='itemlist'>
+        <div className='groupCards' id='itemlist'>
             {
                 item.map(item =>
 
-                    <div className='ListGroup' key={item.id}>
+                    <div className='cardWrapper' key={item.id}>
                         <Item item={item} />
                     </div>
                 )

@@ -1,0 +1,25 @@
+.WrapperDetail{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.ItemImg{
+    width: 540px;
+    height: 540px;
+}
+.Detail{
+    padding-top: 50px ;
+    padding-left: 50px;
+}
+
+.ItemHeader{
+    border-bottom: 1px solid rgb(107, 102, 102);
+    padding-bottom: 20px;
+}
+.sectionInfo{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

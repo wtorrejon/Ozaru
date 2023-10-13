@@ -1,15 +1,25 @@
 .card {
-    margin: 10px;
+    margin: 0;
 }
 
 .card-title {
     height: 72px;
     font-size: 18px;
 }
+/* .card-body{
+    background-color: rgb(228, 250, 255);
+} */
 
 .card-text p {
     margin: 0;
 }
 .Option{
     color: white !important;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 500;
+}
+.btn-primary{
+    background-color: rgb(66, 62, 62);
+    border-color: rgb(66, 62, 62);
 }
