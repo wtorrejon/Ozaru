@@ -42,6 +42,10 @@ const ItemDetail = ({item}) => {
                 <div className='Wrapper-btnBuy'>
                 {goToCart ? <Link className='btnBuy' to='/cart'>Terminar compra</Link> :<ItemCount stock={10} initial={0} onAdd={onAdd} />}
                 </div>
+                <button className='SeguirComprando'>
+                    <Link className='ancorSeguir' to="/">Seguir Comprando</Link>
+                </button>
+                
             </section>
         </div>
     </div>

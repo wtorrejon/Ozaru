@@ -1,0 +1,57 @@
+.totalPrice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intoPrice{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.intoPrice > p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.btn-total{
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: black ;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    border: 1px solid black;
+
+}
+.wrapper-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+.botonera{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapperSeguir{
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: black ;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
