@@ -90,87 +90,90 @@ export const Checkout = () => {
 
   return (
     <>
-      <h2 className="info">
-        Rellena el formulario y nos contactaremos para enviar sus productos
-      </h2>
+      <div className='wrapper-form'>
 
-      <form onSubmit={manejadorFormulario}>
-        {cart.map((producto) => (
-          <div className="item-check" key={producto.id}>
-            <p>
-              {' '}
-              {producto.nombre}  {producto.cantidad}
-            </p>
-            <p>  {producto.precio} </p>
-            
+        <h2 className="info">
+          Rellena el formulario y nos contactaremos para enviar sus productos
+        </h2>
+
+        <form onSubmit={manejadorFormulario}>
+          {cart.map((producto) => (
+            <div className="item-check" key={producto.id}>
+              <p>
+                {' '}
+                {producto.nombre}  {producto.cantidad}
+              </p>
+              <p>  {producto.precio} </p>
+
+            </div>
+          ))}
+
+          <div className="form-group">
+            <label className="lab-check">Nombre</label>
+            <input
+              className="input-check"
+              type="text"
+              value={nombre}
+              onChange={(e) => setNombre(e.target.value)}
+            />
           </div>
-        ))}
 
-        <div className="form-group">
-          <label className="lab-check">Nombre</label>
-          <input
-            className="input-check"
-            type="text"
-            value={nombre}
-            onChange={(e) => setNombre(e.target.value)}
-          />
-        </div>
+          <div className="form-group">
+            <label className="lab-check">Apellido</label>
+            <input
+              className="input-check"
+              type="text"
+              value={apellido}
+              onChange={(e) => setApellido(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Apellido</label>
-          <input
-            className="input-check"
-            type="text"
-            value={apellido}
-            onChange={(e) => setApellido(e.target.value)}
-          />
-        </div>
+          <div className="form-group">
+            <label className="lab-check">Telefono</label>
+            <input
+              className="input-check"
+              type="number"
+              value={telefono}
+              onChange={(e) => setTelefono(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Telefono</label>
-          <input
-            className="input-check"
-            type="number"
-            value={telefono}
-            onChange={(e) => setTelefono(e.target.value)}
-          />
-        </div>
+          <div className="form-group">
+            <label className="lab-check">Email</label>
+            <input
+              className="input-check"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Email</label>
-          <input
-            className="input-check"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
+          <div className="form-group">
+            <label className="lab-check">Email Confirmacion</label>
+            <input
+              className="input-check"
+              type="email"
+              value={emailConfirmacion}
+              onChange={(e) => setEmailConfirmacion(e.target.value)}
+            />
+          </div>
 
-        <div className="form-group">
-          <label className="lab-check">Email Confirmacion</label>
-          <input
-            className="input-check"
-            type="email"
-            value={emailConfirmacion}
-            onChange={(e) => setEmailConfirmacion(e.target.value)}
-          />
-        </div>
+          {error && <p className="error-campos">{error}</p>}
 
-        {error && <p className="error-campos">{error}</p>}
+          {ordenId && (
+            <p className="orden">
+              ¡Gracias por tu compra! <br /> Este es tu numero de orden: <br />{' '}
+              {ordenId}{' '}
+            </p>
+          )}
 
-        {ordenId && (
-          <p className="orden">
-            ¡Gracias por tu compra! <br /> Este es tu numero de orden: <br />{' '}
-            {ordenId}{' '}
-          </p>
-        )}
-
-        <div className="checking">
-          <button className="check-bt" type="submit">
-            Finalizar Compra
-          </button>
-        </div>
-      </form>
+          <div className="checking">
+            <button className="check-bt" type="submit">
+              Finalizar Compra
+            </button>
+          </div>
+        </form>
+      </div>
     </>
   );
 };
