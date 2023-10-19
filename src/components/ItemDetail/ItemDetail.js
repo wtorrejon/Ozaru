@@ -34,13 +34,13 @@ const ItemDetail = ({item}) => {
                     <b>Categoria:</b> {item.category}
                 </p>
                 <p className='info'>
-                    <b>Precio:</b> {item.price}
+                    <b>Precio:</b> S/. {item.price}
                 </p>
                 <p className='info'>
                     <b>Stock Disponible:</b> {item.stock} und
                 </p>
                 <div className='Wrapper-btnBuy'>
-                {goToCart ? <Link className='btnBuy' to='/cart'>Terminar compra</Link> :<ItemCount stock={10} initial={0} onAdd={onAdd} />}
+                {goToCart ? <Link className='btnBuy' to='/cart'>Terminar compra</Link> :<ItemCount stock={item.stock} initial={0} onAdd={onAdd} />}
                 </div>
                 <button className='SeguirComprando'>
                     <Link className='ancorSeguir' to="/">Seguir Comprando</Link>

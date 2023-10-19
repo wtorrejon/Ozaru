@@ -20,3 +20,15 @@
     color: white !important;
     
 }
+.navbar-toggler{
+    background-color: white;
+}
+
+.list-first{
+    display: flex;
+    gap: 20px;
+}
+.navbar-collapse{
+    display: flex;
+    flex-direction: column;
+}

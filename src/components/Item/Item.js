@@ -11,7 +11,7 @@ const Item = ({ item }) => {
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>
         <Card.Text>
-          Precio: {item.price}
+          Precio: S/. {item.price}
         </Card.Text>
         <Card.Text>
           Stock Disponible: {item.stock}
