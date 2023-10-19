@@ -156,14 +156,14 @@ export const Checkout = () => {
               onChange={(e) => setEmailConfirmacion(e.target.value)}
             />
           </div>
-          <div className="checking">
+          
+        </div>
+
+        <div className="checking">
             <button className="check-bt" type="submit">
               Finalizar Compra
             </button>
           </div>
-        </div>
-
-
         {error && <p className="error-campos">{error}</p>}
 
         {ordenId && (
