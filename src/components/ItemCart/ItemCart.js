@@ -24,7 +24,7 @@ const ItemCart = ({ product }) => {
                     <p>${product.quantity * product.price}</p>
                 </div>
                 <button className='btnRemove' onClick={() => removeProduct(product.id)}>
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         delete
                     </span>
                 </button>

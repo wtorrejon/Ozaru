@@ -54,7 +54,7 @@ const Cart = () => {
         </div>
         <div className='botonera'>
           <Link className='wrapperSeguir' to="/">Seguir Comprando</Link>
-          <Link className='wrapper-link' to="/checkout">
+          <Link to="/checkout">
             {' '}
             <button className="btn-total">Finalizar Compra</button>
           </Link>
